@@ -1,5 +1,17 @@
 [
   {
+    "chainId": "prysm-devnet-1",
+    "restURI": "https://prysm-api-devnet.kleomedes.network",
+    "checkStatus": false,
+    "rpcURI": "",
+    "restURIs": [
+      "https://prysm-api-devnet.kleomedes.network",
+      "https://prysm-testnet-api.polkachu.com",
+      "https://prysm-testnet-api.synergynodes.com"
+    ],
+    "sourceEnd": "" 
+  },
+  {
     "chainId": "cosmoshub-4",
     "restURI": "https://apis.mintscan.io/cosmos/lcd",
     "checkStatus": false,

@@ -18,6 +18,87 @@ export const networks: Network[] = [
       toolbar:
         'https://raw.githubusercontent.com/vitwit/chain-registry/master/agoric/images/bld.png',
     },
+    isCustomNetwork: true,
+    supportedWallets: [],
+    keplrExperimental: false,
+    leapExperimental: false,
+    isTestnet: true,
+    govV1: false,
+    explorerTxHashEndpoint: 'https://atomscan.com/prysm/transactions/',
+    config: {
+      chainId: 'prysm-devnet-1',
+      chainName: 'Prysm Devnet',
+      rest: 'https://api.resolute.vitwit.com',
+      rpc: 'https://api.resolute.vitwit.com',
+      restURIs: [
+        'https://api.resolute.vitwit.com'
+      ],
+      rpcURIs: [
+        'https://prysm-rpc-devnet.kleomedes.network',
+        'https://prysm-testnet-rpc.polkachu.com',
+        'https://prysm-testnet-rpc.synergynodes.com',
+      ],
+      currencies: [
+        {
+          coinDenom: 'PRYSM',
+          coinMinimalDenom: 'uprysm',
+          coinDecimals: 6,
+        },
+      ],
+      bech32Config: {
+        bech32PrefixAccAddr: 'prysm',
+        bech32PrefixAccPub: 'prysmpub',
+        bech32PrefixValAddr: 'prysmvaloper',
+        bech32PrefixValPub: 'prysmvaloperpub',
+        bech32PrefixConsAddr: 'prysmgvalcons',
+        bech32PrefixConsPub: 'prysmvalconspub',
+      },
+      feeCurrencies: [
+        {
+          coinDenom: 'PRYSM',
+          coinMinimalDenom: 'uprysm',
+          coinDecimals: 6,
+          gasPriceStep: {
+            low: 0.03,
+            average: 0.05,
+            high: 0.07,
+          },
+        },
+      ],
+      bip44: {
+        coinType: 118,
+      },
+      stakeCurrency: {
+        coinDenom: 'PRYSM',
+        coinMinimalDenom: 'uprysm',
+        coinDecimals: 6,
+      },
+      image:
+        'https://raw.githubusercontent.com/leapwallet/assets/2289486990e1eaf9395270fffd1c41ba344ef602/images/logo.svg',
+      theme: {
+        primaryColor: '#fff',
+        gradient:
+          'linear-gradient(180deg, #BF2A4560 0%, #12131C80 100%)',
+      },
+    },
+  },
+  {
+    enableModules: {
+      authz: true,
+      feegrant: true,
+      group: false,
+    },
+    aminoConfig: {
+      authz: false,
+      feegrant: false,
+      group: false,
+    },
+    showAirdrop: false,
+    logos: {
+      menu: 'https://raw.githubusercontent.com/vitwit/aneka-resources/d234799b2da3dc0b148829259866d07618b9773b/assets/agoric/bld.png',
+      toolbar:
+        'https://raw.githubusercontent.com/vitwit/chain-registry/master/agoric/images/bld.png',
+    },
     isCustomNetwork: false,
     supportedWallets: [],
     keplrExperimental: false,

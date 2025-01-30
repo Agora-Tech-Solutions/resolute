@@ -23,7 +23,7 @@ const openGraph: OpenGraph = {
 };
 
 export const metadata: Metadata = {
-  title: 'Resolute',
+  title: 'Interchain Dashboard',
   description:
     'Interchain interface, Resolute is an advanced spacecraft designed to travel through the multiverse, connecting Cosmos sovereign chains.',
   keywords:

@@ -48,7 +48,7 @@ const TopBar = () => {
                   draggable={false}
                 />
                 <span className="text-h1 !font-semibold tracking-[1.5px]">
-                  RESOLUTE
+                  INTERCHAIN DASHBOARD
                 </span>
               </div>
             </Link>
